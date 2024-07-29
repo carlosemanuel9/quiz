@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <a href="https://www.instagram.com/p/CvAoIhNudX1/" target="_blank">clique aqui para ver algo <br> obs não recomendado para o benevi</a>
+        <h1>Quiz do Benevôlencia</h1>
+        <!-- Pergunta 1 -->
+        <div id="question1">
+            <h2>Qual seu jogador favorito?</h2>
+            <input type="radio" name="color" value="cr7">Cr7<br>
+            <input type="radio" name="color" value="messi">Messi<br>
+            <input type="radio" name="color" value="ney">Ney<br>
+            <button onclick="nextQuestion('question1', 'question2')">Próxima</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div id="question2" class="hidden">
+            <h2>De 0 a 100 quanto vc ama sua ex?</h2>
+            <input type="radio" name="animal" value="zero"> 0<br>
+            <input type="radio" name="animal" value="cinquenta"> 50<br>
+            <input type="radio" name="animal" value="cem"> 100 , volta vida<br>
+            <button onclick="nextQuestion('question2', 'question3')">Próxima</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div id="question3" class="hidden">
+            <h2>Qual seu esporte favorito?</h2>
+            <input type="radio" name="season" value="fut"> Futebol<br>
+            <input type="radio" name="season" value="vaquejada"> Vaquejada<br>
+            <input type="radio" name="season" value="futsal"> Futsal<br>
+            <button onclick="nextQuestion('question3', 'question4')">Próxima</button>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div id="question4" class="hidden">
+            <h2>Em quem vc vai votar ?</h2>
+            <input type="radio" name="food" value="pal"> Palmeirão<br>
+            <input type="radio" name="food" value="wesley"> Wesley<br>
+            <input type="radio" name="food" value="emater"> Gilson da emater<br>
+            <button onclick="nextQuestion('question4', 'question5')">Próxima</button>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div id="question5" class="hidden">
+            <h2>O quanto vc é bom de bola?</h2>
+            <input type="radio" name="hobby" value="ruim"> Sou terrivel<br>
+            <input type="radio" name="hobby" value="mid"> Faço o feijão com arroz<br>
+            <input type="radio" name="hobby" value="bom"> Craque 10 e faixa<br>
+            <button onclick="calculateResult()">Ver Resultado</button>
+        </div>
+        <!-- Resultado -->
+        <div id="result" class="hidden">
+            <h2>Seu Resultado</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

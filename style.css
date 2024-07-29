@@ -1,0 +1,37 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 228, 4);
+    font-family: 'mukta';
+}
+h1,h2,h3 {
+    font-family: 'mukta';
+    text-align: center;  
+}
+
+#quiz-container{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hidden {
+    display: none;
+}
+a {
+    font-family: 'mukta';
+    font-size: 20px;
+    color: black;
+}
+button {
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    border-color: black;
+    border: 5px solid black;
+}
